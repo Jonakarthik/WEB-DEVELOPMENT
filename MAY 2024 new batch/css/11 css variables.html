@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        :root{
+            --color:rgb(193, 236, 120);
+            --seclr:red;
+            --defpad:23px;
+            --o:0.5;
+        }
+        div:first-child{
+            background-color: rgb(35, 151, 201);
+        }
+        .container{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--o);
+            list-style: none; 
+            padding: var(--defpad);
+            border: 12px solid var(--seclr);
+        }
+        ul li:first-child{
+            --color:orange;
+            background-color: var(--color);
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      obcaecati dolore quibusdam blanditiis doloremque nemo recusandae deserunt
+      totam, magni ad. Ut ullam minus ducimus mollitia dolorum corrupti, porro
+      at aperiam!
+    </div>
+  </body>
+</html>

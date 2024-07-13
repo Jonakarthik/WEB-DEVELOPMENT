@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    
+    <form action="">
+        Admission number:
+        <input type="text" name="one" id="ok"> <br><br>
+
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname" ><br> <br>
+
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" name="lname" value="leo"> 
+        <!-- value attribute is used to display text inside the input type -->
+    </form>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form action="">
+        <input type="radio" name="weblang" id="html">
+        <label for="html">HTML</label>
+        
+        <input type="radio" name="weblang" id="css">
+        <label for="css">CSS</label>
+        
+        <input type="radio" id="js" name="weblang">
+        <label for="js">JavaScript</label>
+        
+    </form>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label> <br> <br>
+      </form>
+
+    <form action="">
+        enter your personal intresets. <br>  
+       1. <input type="checkbox" name="p1" id="p1" value="book">
+        <label for="p1">Reading Books</label> <br> 
+
+        2. <input type="checkbox" name="p2" id="p2" value="TV">
+        <label for="p2">Watching T.V </label> <br>
+
+        3. <input type="checkbox" name="p3" id="p3" value="games">
+        <label for="p3">Playing Games</label> <br> <br>
+    </form>
+    
+    <label for="cars">choose your fav car company :</label>
+    <select name="cars" id="cars" multiple>
+        <option value="Toyota">Toyota</option>
+        <option value="Ford">Ford</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Audi">Audi</option>
+        <option value="volvo" selected>volvo</option>
+    </select>
+    <br><br>
+
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea> <br> <br>
+
+        <button type="button" onclick="alert('Hello world')">Click</button>
+
+        <form action="/action_page.php">
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+          </form>
+
+          <form action="">
+            <input list="Apps">
+            <datalist id="Apps">
+                <option value="action">
+                    <option value="Drama">
+                        <option value="Race">
+                            <option value="beauty">
+          </form>
+          <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+          </form>
+          
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css selector</title>
+    <style>
+      /* /* element selector
+        div{
+            background-color: red;
+        }
+        class selector
+        .red{
+            background-color: red;
+        } */
+      /* id selector #green {
+        background-color: rgb(65, 222, 112);
+      } */
+
+      child selector */ 
+      div > p {
+        color: slateblue;
+        background-color: yellow;
+      }
+      div > p {
+        color: aqua;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red">
+      <h2>iam in 1 div</h2>
+    </div>
+    <div id="green">
+      iam in 2 div
+      <p>iam a para inside div</p>
+    </div>
+    <div>
+        hii iam
+        <h2>hey
+            0
+        </h2>
+        <p>welcome</p>
+    </div>
+  </body>
+</html>

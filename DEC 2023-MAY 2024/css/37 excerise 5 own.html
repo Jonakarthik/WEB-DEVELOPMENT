@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .layout{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        .nav{
+            border: 1px solid rgb(138, 21, 21);
+            background-color: blueviolet;
+        }
+        ul li{
+            
+            width: 100vw;
+            display: inline;
+            list-style:none;
+            color: aliceblue;
+            margin: 30px  30px 3px 30px ;
+            padding: 25px 20px 0px 20px ;
+        }
+        .container{
+            display: flex;
+            border: 1px solid red;
+            width:100vw ;
+            height: 40vh;
+            margin: 20;
+            padding: 20px;
+            background-color: cadetblue;
+        }
+        .box{
+            border: 1px solid white;
+            width: 45vw;
+            margin: 10px;
+            display: inline-block;
+            
+        }
+        .box1{
+            background-color: rgb(173, 103, 196);
+        }
+        .box2{
+            background-color: rgb(63, 163, 218);
+        }
+        .text{
+            color: #fcfcfc;
+            border: 1px solid white;
+            padding: 10px;
+            margin:20px 10px 10PX 10px;
+            width: 90vw;
+            text-align: center;
+            border-radius: 12px;
+            
+            
+        }
+        orbox{
+            height: 5vh;
+            width: 5vw;
+            border-radius:50%;
+            background-color: orange;
+            position: fixed;
+            bottom: px;
+        }
+        footer{
+            position: absolute;
+            bottom:23px;
+            left: 1;
+            right: 23px;
+            width: 100vw;
+            height: 8vh;
+            border: 1px solid gainsboro;
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
+        <div class="text">
+            <p class="1">welcome to this sigma web</p>
+            <p class="2">Development Express</p>
+
+        </div>
+        <div class="orbox"></div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

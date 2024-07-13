@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div>
+            <img src="https://imgs.search.brave.com/wlhpERACaSRNAwofFvJ4IPZQUVqRUHkhmVdOcPfok3Q/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/Mjc2NzkxMjQ1ODMt/OTIwOGJlOTkwYmI1/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFlt/OWhkSHhsYm53d2ZI/d3dmSHg4TUE9PQ.jpeg" alt="">
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus saepe aperiam nisi sit facere, exercitationem maxime aliquam eos rem voluptatibus unde tempora, ut magni repellat beatae nobis vero nostrum explicabo?
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, similique optio impedit vitae saepe deserunt consequatur harum atque autem enim neque voluptatibus commodi amet quaerat quo eveniet obcaecati necessitatibus voluptas! Officiis non esse, tenetur debitis sunt animi repellat consequatur incidunt veritatis et perspiciatis. Doloremque sit amet perferendis in magni.</div>
+    </div>
+</body>
+</html>

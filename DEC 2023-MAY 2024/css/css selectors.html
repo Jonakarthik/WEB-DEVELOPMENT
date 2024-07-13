@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      /* div{
+            background-color: cyan;
+        } */
+
+      /* class selector */
+      .red {
+        background-color: gold;
+      }
+
+      /* id selector */
+      #green {
+        background-color: violet;
+      }
+
+      /* child selector(p should be a direct child of div) */
+      div > p {
+        color: yellow;
+        background-color: black;
+      }
+
+      /* p should not be direct child of div  */
+      div p {
+        color: magenta;
+      }
+
+      /* Universal selector
+         *{
+            padding: 0;
+            margin: 0;
+         } */
+
+      /* pseudo selector */
+      /* if the link is visited then color will turn into green */
+      a:visited {
+        color: rgb(48, 210, 27);
+      }
+      /* if the link is not visited,link will be in blue color */
+      a:link {
+        color: blue;
+      }
+      a:active {
+        color: mediumvioletred;
+      }
+      a:hover {
+        background-color: black;
+      }
+
+      /* div:first-child{
+            background-color: rgb(41, 37, 37);
+         } */
+
+      p:first-child {
+        background-color: blue;
+      }
+
+      /* div p:nth-child(2){   -->2nd child will be colored blueviolet
+        color: blueviolet;
+      } */
+
+      
+
+      /* Attribute selector */
+      [data-h=h5]{
+        background-color: red;
+        color: gold;
+      }
+</style>
+  </head>
+  <body>
+    <div class="red">Iam in Div</div>
+
+    <div>Iam in Another Div</div>
+
+    <div id="green">Iam in a div using ID</div>
+
+    <div>
+      <p>iam in para tag inside Div tag</p>
+    </div>
+
+    <div>
+      <article>
+        <p>iam a para tag inside a article present inside div</p>
+      </article>
+    </div>
+
+    <a href="https://www.Google.com" target="_blank">go to Google</a> <br />
+    <br />
+    <a href="https://www.youtubee.com">go to youtube</a>
+
+    <div class="one">
+      <p>iam One</p>
+      <p>iam two</p>
+      <p>iam three</p>
+    </div>
+
+    <h5 class="h" data-h="h5">Attribute selector </h5>
+  </body>
+</html>

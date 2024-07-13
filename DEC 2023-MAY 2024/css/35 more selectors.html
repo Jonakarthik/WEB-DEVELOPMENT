@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+
+        .box:first-child{
+            background-color: blueviolet;
+        }
+        .box::first-line{
+            background-color: yellow  ;
+        }
+        /* 
+        inside nav every element
+        .nav *{ 
+            color: aqua;
+            border: 2px solid saddlebrown;
+            padding: 12px;
+            margin-top: 3px;
+        } */
+
+        grouping elements
+        p,a,.box,[data-color="primary"]{
+            color: steelblue;
+        }
+
+        .box:nth-child(odd){
+
+        }
+        .box:nth-child(3){
+
+        }
+        /* by this before we are inserting content in html via css */
+        .boxes::before{
+            content: "welcome to css";
+        }
+         .boxes::after{
+            content: "The End";
+         }
+         .box::first-line{
+            background-color: tomato;
+         }
+
+         selection only for boxes
+         .boxes::selection{
+            background-color: rgb(170, 87, 87);
+            color: rgb(172, 172, 221);
+         }
+
+         selection for whole page
+         ::selection{
+            color: violet;
+            background-color: rgb(170, 87, 87);
+         }
+            input::placeholder{
+                color: aquamarine;
+                font-size: 40px;
+            }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">iam first box Lorem ipsum dolor sit amet consectetur adipisicing elit.  voluptate officiis corporis neque! Molestiae, facere.</div>
+        <div class="box">iam second box</div>
+        <div class="box">iam third box</div>
+        <div class="nav">
+            <div class="p0">iam para 1</div>
+            <div data-color="primary" class="p1">iam para 2</div>
+            <div class="p2">iam para 3</div>
+            <div class="p3">iam para 4</div>
+        </div>
+        <input type="text" placeholder="type your name">
+    </div>
+</body>
+</html>
